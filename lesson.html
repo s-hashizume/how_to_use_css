@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>LESSON1</title>
+        <meta name="description" content="LESSON1 HTMLの基本を勉強するページです">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <h1>LESSON1</h1>
+        </header>
+        <main>
+            <section class="section1">
+                <h2>cssファイルをリンク</h2>
+                <p>cssフォルダにあるstyle.cssをリンクしよう<br> → ブラウザでプレビューし、デベロッパーツールを開き、エラーが出ていないことを確認</p>
+
+            </section>
+            
+            <section class="section2">
+                <h2>エレメント</h2>
+                <ul>
+                    <li>pのmarginとpaddingを0にしよう → プレビュー</li>
+                    <li>h1のmarginを上は0、左右も0、下だけ1文字分にしよう → プレビュー</li>
+                    <li>h2のmarginを上は0、左右も0、下だけ1文字分にしよう → プレビュー</li>
+                    <li>h2の文字の色を好きな色に変えよう → プレビュー</li>
+                    <li>ulのデフォルトの「・」を取り、marginとpaddingを0にしよう → プレビュー</li>
+                    <li>すべての要素のbox-sizingを、外枠の線まで含むサイズにしよう</li>
+                </ul> 
+                
+            </section>
+
+            <section class="section3">
+                <h2>レイアウト</h2>      
+                <p>bodyの背景色を薄いグレーにしよう（例：#dddddd） → プレビュー</p>
+                <p>bodyの文字の色を少し薄くしよう（例：#333333） → プレビュー</p>
+                <p>headerの背景色を好きな色にしよう → プレビュー</p>
+                <p>sectionの背景色を白にしよう → プレビュー</p>
+                <p>bodyのmarginとpaddingを0にしよう → プレビュー</p>
+                <p>sectionの内側上下左右に、2文字分の余白を入れよう → プレビュー</p>
+                <p>sectionの外側の下のみに、2文字分の余白を入れよう → プレビュー</p>
+                <p>このsectionだけに、好きな背景色を入れよう → プレビュー</p>
+                <p>このページの一番下にある「.copy」の文字を中央揃えにしよう → プレビュー</p>
+            </section>
+            
+            <section class="section4">
+                <h2>メイン</h2>
+                <p>「.box」がこれより下の複数のセクションに存在していることを確認しよう</p>
+                <p>「.box」に白の背景色を入れ、周りを黒の1pxの直線で囲もう → プレビュー</p>
+                <p>「.box」の内側上下左右に2文字分の余白を入れよう → プレビュー</p>
+                <div class="box">
+                    <p>これはboxです。</p>
+                </div>
+                <p>「.wrap」がこれより下の複数のセクションに存在していることを確認しよう</p>
+                <p>「.wrap」に白以外の好きな色の背景色を入れ、幅は最大1200pxにし、左右中央に配置しよう → プレビュー</p>
+                <div class="wrap">
+                    <p>これはwrapです。</p>
+                </div>
+            </section>
+            
+            <section>
+                <h2>背景と画像</h2>
+                <div class="wrap wrap1">
+                    <p>このpの要素の親要素の「.wrap」に「wrap1」というクラスを加えよう</p>
+                    <p>「.wrap1」に、最低300pxの高さを設定しよう</p>
+                    <p>「.wrap1」の背景にchab.pngを入れ、右上に配置し、好きな背景色を入れよう → プレビュー</p>
+                </div>
+            </section>
+            
+            <section>
+                <h2>背景と画像</h2>
+                <div class="wrap wrap2">
+                    <p>このpの要素の親要素に任意のクラスを加えよう</p>
+                    <p>このpの要素の親要素に、最低ウィンドウの高さの50%の高さを設定しよう</p>
+                    <p>このpの要素の親要素の背景にbg.jpgを入れ、左下を基準に配置し、この枠全面を隙間なく覆う表示にしよう → プレビュー</p>
+                </div>
+            </section>
+            
+            <section>
+                <h2>flexbox</h2>
+                <div class="wrap">
+                    <p>下のulに「flexbox1」というクラスをつけよう</p>
+                    <p>display:flex;を使って「.flexbox1」の中身を横に並べよう → プレビュー</p>
+                    <p>「.flexbox1」の高さを最低600pxに設定しよう → プレビュー</p>
+                    <p>上下左右中央に配置しよう → プレビュー</p>
+                    <ul class="flexbox1">
+                        <li class="box">これはboxです。</li>
+                        <li class="box">これはboxです。これはboxです。</li>
+                        <li class="box">これはboxです。これはboxです。これはboxです。</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section>
+                <div class="wrap">
+                    <p>下のulに任意のクラスをつけよう</p>
+                    <p>display:flex;を使ってこの中身を横に並べよう → プレビュー</p>
+                    <p>端までいったら折り返しする設定にしよう → プレビュー</p>
+                    <ul class="flexbox2">
+                        <li class="box">これはboxです。</li>
+                        <li class="box">これはboxです。これはboxです。</li>
+                        <li class="box">これはboxです。これはboxです。これはboxです。</li>
+                        <li class="box">これはboxです。</li>
+                        <li class="box">これはboxです。これはboxです。</li>
+                        <li class="box">これはboxです。これはboxです。これはboxです。</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section>
+                <div class="wrap">
+                    <p>下のulに任意のクラスをつけよう</p>
+                    <p>下のulの上下に内側の余白5remをつけよう → プレビュー</p>
+                    <p>display:flex;を使ってこの中身を横に並べよう → プレビュー</p>
+                    <p>これらのliを均等な幅にしよう（3等分なので、横幅33.33%） → プレビュー</p>
+                    <p>下の.boxそれぞれの中のaに背景色を入れ、aの文字の色を白にしよう。 → プレビュー</p>
+                    <p>下の.boxそれぞれの中のaの下線を消そう。 → プレビュー</p>
+                    <p>下の.boxをdisplay:flex;にして、aの高さを揃えよう → プレビュー</p>
+                    <p>下の.boxそれぞれの中のaの幅を100%にして、幅をそろえよう → プレビュー</p>
+                    <p>下の.boxの内側の左右に1remずつ余白を入れ、内側上下の余白は0にし、黒い囲み線を消そう。.boxの背景色も消そう。（ヒント：transparent） → プレビュー</p>
+                    <p>下の.boxの親要素の外側の左右に-1remずつ余白を設定して、横幅を.wrapにぴったり揃えよう。 → プレビュー</p>
+                    <ul class="flexbox3">
+                        <li class="box boxlist"><a class="link" href="#">これはboxです。</a></li>
+                        <li class="box boxlist"><a class="link" href="#">これはboxです。これはboxです。</a></li>
+                        <li class="box boxlist"><a class="link" href="#">これはboxです。これはboxです。これはboxです。これはboxです。これはboxです。これはboxです。これはboxです。これはboxです。</a></li>
+                    </ul>
+                </div>
+            </section>
+            
+        </main>
+        <footer>
+        <p class="copy">&copy; Web Design Class</p>
+        </footer>
+    </body>
+</html>

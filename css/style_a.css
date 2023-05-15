@@ -1,0 +1,94 @@
+/*---------- element ------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0 0 1em;
+}
+
+h2 {
+    margin: 0 0 1em;
+    color: darkcyan;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---------- layout ------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    background: #dddddd;
+}
+
+header {
+    background: #f8a5a5;
+}
+
+section {
+    padding: 2em;
+    margin: 0 0 2em;
+    background: #fff;
+}
+
+.section3 {
+    background: #ABDAC8;
+}
+
+.copy {
+    text-align: center;
+}
+
+
+/*---------- content ------------*/
+/* この下に自分でcssを追加していこう */
+
+.box {
+    padding: 2em;
+    background: #fff;
+    border: solid 1px #000;
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 1200px;
+    background: #8fcafd;
+}
+
+/* 省略 */
+
+.flexbox3 {
+    display: flex;
+    padding: 5rem 0;
+    margin: 0 -1rem;
+}
+
+.flexbox3 .box {
+    display: flex;
+    padding: 0 1rem;
+    width: 33.33%;
+    border: none;
+    background: transparent;
+}
+
+.flexbox3 .box a {
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    background: #f8a5a5;
+}
+
+

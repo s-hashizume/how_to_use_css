@@ -1,0 +1,111 @@
+/*---------- element ------------*/
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0 0 1em 0;
+}
+
+h2 {
+    margin: 0 0 1em 0;
+    color: #0bd;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---------- layout ------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #dddddd;
+}
+
+header {
+    background: #f67690;
+}
+
+section {
+    padding: 2em;
+    margin: 0 0 2em 0;
+    background: #fff;
+}
+
+.section3 {
+    background: #f6f0cc;
+}
+
+.copy {
+    text-align: center;
+}
+
+
+/*---------- content ------------*/
+/* この下に自分でcssを追加していこう */
+.box {
+    background: #fff ;
+    border: solid 1px #000;
+    padding: 2em;
+}
+
+.wrap {
+    background: #eaf6fd ;
+    max-width: 1200px;
+    margin: 0 auto;/*--間違えた--*/
+}
+
+.wrap1 {
+    min-width: 300px;
+    background: #f6f0cc url(../images/cheb.png) no-repeat right top/contain;
+}
+
+.wrap2 {
+    height: 50vh;/*--忘れてた--*/
+    background: url(../images/bg.jpg) left bottom/cover;
+}
+
+.flexbox1 {
+    display: flex;
+    justify-content: center;/*ここ2行が分からなかった*/
+    align-items: center;
+    min-height: 600px;
+}
+
+.flexbox2 {
+    display: flex;
+    flex-wrap: wrap;/*--忘れていた--*/
+}
+
+.flexbox3 {
+    padding: 5rem 0;
+    display: flex;
+    margin: 0 -1rem;
+}
+
+.boxlist {
+    width: 33.33%;
+    background: transparent;/*---知らなかった---*/
+    display: flex;
+    padding: 0 1rem;
+    border: none;
+}
+
+.link {
+    background: #3aacad;
+    color: #fff;
+    text-decoration: none;/*---分からなかった---*/
+    width: 100%;
+}
